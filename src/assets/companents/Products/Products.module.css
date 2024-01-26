@@ -1,0 +1,28 @@
+.products {
+    margin-top: 128px;
+}
+
+.products1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color: #2D2D2B;
+}
+
+.products1 a {
+    color: #B8926A;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration-line: underline;
+}
+
+.product__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+    column-gap: 20px;
+    row-gap: 45px;
+    place-content: center;
+}

@@ -1,0 +1,65 @@
+.conth2 {
+    color: var(--Black, #2D2D2B);
+    margin-top: 128px;
+    font-family: "Didot";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+
+.contact {
+    display: flex;
+    gap: 137px;
+}
+
+.contact1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact1 input {
+    margin-bottom: 15px;
+    width: 563px;
+    height: 54px;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: 1px solid var(--Dusty-rose, #D4C8BE);
+    background: var(--Background, #EAE6DF);
+}
+
+.contactImg {
+    width: 50%;
+    /* height: 417px; */
+    overflow: hidden;
+    /* border-radius: 5px 5px 300px 5px; */
+    /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+}
+
+.contact1>textarea {
+    width: 563px;
+    height: 136px;
+    border-radius: 10px;
+    padding-left: 17px;
+    padding-top: 17px;
+    resize: none;
+    border: 1px solid var(--Dusty-rose, #D4C8BE);
+    background: var(--Background, #EAE6DF);
+}
+
+.login {
+    width: 563px;
+    margin-top: 20px;
+    height: 54px;
+    border-radius: 10px;
+    color: var(--Background, #EAE6DF);
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+
+    background: var(--Primary, #B8926A);
+}

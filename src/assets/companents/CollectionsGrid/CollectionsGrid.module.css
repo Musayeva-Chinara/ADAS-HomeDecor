@@ -1,0 +1,38 @@
+.section {
+    display: flex;
+    /* width: 330px; */
+    position: relative;
+    overflow: hidden;
+}
+
+.section>img {
+    border-radius: 10px;
+
+}
+
+.section_blur {
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(7.5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_blur p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Background, #EAE6DF);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    /* 125% */
+}

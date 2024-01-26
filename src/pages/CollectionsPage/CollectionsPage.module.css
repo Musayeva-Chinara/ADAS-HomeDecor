@@ -1,0 +1,43 @@
+.collecPage {
+    display: flex;
+}
+
+.collecUl {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.collectionP {
+    margin-top: 49px;
+}
+
+.collectionP h2 {
+    color: var(--Black, #2D2D2B);
+    font-family: "Didot";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+.collectionP p {
+    margin-top: 46px;
+    width: 563px;
+    color: var(--Black, #2D2D2B);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.collecPageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(22rem, 100%), 1fr));
+
+    column-gap: 20px;
+    row-gap: 45px;
+    place-content: center;
+}

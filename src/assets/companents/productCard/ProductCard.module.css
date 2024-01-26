@@ -1,0 +1,47 @@
+.product {
+    width: 330px;
+}
+
+.product1 {
+    position: relative;
+    width: 100%;
+}
+
+.product1 img {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat, #D9D9D9;
+}
+
+.product_icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background: #FFF;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.product_h2p h2 {
+    /* width: 400px; */
+    color: #2D2D2B;
+    /* Subtitle */
+    font-family: "Raleway";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 140% */
+}
+
+.product_h2p p {
+    color: #B8926A;
+    font-family: "Raleway";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 140% */
+}

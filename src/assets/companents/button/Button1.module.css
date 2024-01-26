@@ -1,0 +1,13 @@
+.slbasket {
+    border-radius: 10px;
+    border: 1px solid #B8926A;
+    background: var(--Primary, #B8926A);
+    width: 330px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: var(--Background, #EAE6DF);
+
+}

@@ -1,0 +1,151 @@
+.main_header {
+    display: flex;
+    column-gap: 20px;
+    position: relative;
+    margin-top: 35px;
+    margin: 30px;
+}
+
+.mainheader_h2 {
+    max-width: 830px;
+    margin-top: 300px;
+}
+
+.mainheader_h2 h2 {
+    max-width: 830px;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    z-index: 1;
+    color: #2d2d2b;
+    /* H1 */
+    font-family: "GFS Didot", serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 86px;
+    /* 119.444% */
+}
+
+.mainheader_h2 p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 447px;
+    color: #2d2d2b;
+
+    /* Body text */
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.discount {
+    margin-top: 140px;
+    width: 100%;
+
+    background-image: url("../../assets/img/discount.png");
+    align-items: center;
+    justify-content: center;
+}
+
+.discount_blur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 62px 0;
+    border-radius: 5px 5px 0px 0px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(7.5px);
+}
+
+.discount1 {
+    max-width: 501px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    gap: 39px;
+
+}
+
+.discount1 h2 {
+    text-align: center;
+    color: #FFF;
+
+    /* H2 */
+    font-family: "Didot";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    margin-bottom: 30px;
+    /* 81.25% */
+}
+
+.discount1 p {
+    color: #FFF;
+    text-align: center;
+
+
+    margin-left: 28px;
+    margin-right: 28px;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.discount_basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    width: 330px;
+    height: 54px;
+    border-radius: 10px;
+    background: var(--Primary, #B8926A);
+}
+
+.discount_basket span {
+    color: #EAE6DF;
+    background: #B8926A;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 125% */
+}
+
+.discount_basket svg {
+    fill: #EAE6DF;
+    width: 24px;
+    height: 24px;
+}
+
+.collection {
+    margin-top: 200px;
+
+}
+
+.collec {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-family: "Dido";
+    color: #2D2D2B;
+}
+
+.collec a {
+    color: #B8926A;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration-line: underline;
+}

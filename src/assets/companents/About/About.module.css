@@ -1,0 +1,61 @@
+.AboutH2 {
+    color: #2D2D2B;
+    margin-top: 128px;
+    margin-bottom: 49px;
+    /* H3 */
+    font-family: Didot;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    /* 108.333% */
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 66px;
+}
+
+.aboutImg {
+    width: 680px;
+    height: 412px;
+    overflow: hidden;
+    border-radius: 300px 5px 5px 5px;
+
+}
+
+.aboutImg * {
+    width: 100%;
+    height: 100%;
+}
+
+.about p {
+    width: 563px;
+    color: #2D2D2B;
+    font-variant-numeric: lining-nums proportional-nums;
+    /* Body text */
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.about_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 54px;
+    border-radius: 10px;
+    border: 1px solid #B8926A;
+    color: #b8926afb;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 125% */
+}

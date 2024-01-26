@@ -1,0 +1,46 @@
+.aboutPage {
+    display: flex;
+
+}
+
+.aboutUl {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    color: var(--Black, #2D2D2B);
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.aboutPage1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+
+.aboutPage1 h2 {
+    color: var(--Primary, #B8926A);
+    text-align: center;
+    font-family: "Didot";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+
+}
+
+.aboutPage1 p {
+    color: var(--Black, #2D2D2B);
+    text-align: center;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+
+}
