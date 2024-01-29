@@ -20,14 +20,15 @@ const CollectionsPage = () => {
         </p>
       </div>
       <div className={style.collecPageGrid}>
-        <CollectionsGrid styles="myWidth" />
-        <CollectionsGrid styles="myWidth" />
-        <CollectionsGrid styles="myWidth" />
-        <CollectionsGrid styles="myWidth" />
-        <CollectionsGrid styles="myWidth" />
-        <CollectionsGrid styles="myWidth" />
-        <CollectionsGrid styles="myWidth" />
-        <CollectionsGrid styles="myWidth" />
+        <CollectionsGrid />
+        <CollectionsGrid />
+        <CollectionsGrid />
+        <CollectionsGrid />
+        <CollectionsGrid />
+        <CollectionsGrid />
+        <CollectionsGrid />
+        <CollectionsGrid />
+        <CollectionsGrid />
       </div>
     </div>
   );

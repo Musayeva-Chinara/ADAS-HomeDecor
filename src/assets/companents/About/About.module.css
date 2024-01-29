@@ -2,13 +2,11 @@
     color: #2D2D2B;
     margin-top: 128px;
     margin-bottom: 49px;
-    /* H3 */
     font-family: Didot;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: 52px;
-    /* 108.333% */
 }
 
 .about {
@@ -34,13 +32,11 @@
     width: 563px;
     color: #2D2D2B;
     font-variant-numeric: lining-nums proportional-nums;
-    /* Body text */
     font-family: Raleway;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 150% */
 }
 
 .about_button {
@@ -56,6 +52,6 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
+    margin-top: 44px;
     line-height: 20px;
-    /* 125% */
 }

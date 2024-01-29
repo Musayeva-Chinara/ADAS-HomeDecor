@@ -140,6 +140,16 @@
     color: #2D2D2B;
 }
 
+.collec h2 {
+    color: var(--Black, #2D2D2B);
+    font-family: "Didot";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    /* 108.333% */
+}
+
 .collec a {
     color: #B8926A;
     font-family: Raleway;

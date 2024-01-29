@@ -1,8 +1,9 @@
 .section {
-    display: flex;
+    /* display: flex; */
     /* width: 330px; */
     position: relative;
     overflow: hidden;
+    margin-top: 59px;
 }
 
 .section>img {
