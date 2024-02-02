@@ -6,7 +6,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 
 const ProductCard = () => {
   return (
-    <Link className={style.product}>
+    <Link to="/products/ProductDetail" className={style.product}>
       <div className={style.product1}>
         <img src={productImg} alt="" />
         <button className={style.product_icon}>

@@ -1,0 +1,68 @@
+.checkoutUl {
+    display: flex;
+}
+
+.heckoutLi {
+    display: flex;
+    gap: 40px;
+    margin-top: 70px;
+}
+
+.checkouth2 {
+    font-size: 20px;
+    margin-top: 49px;
+}
+
+
+.CheckoutE {
+    display: flex;
+    gap: 20px;
+}
+
+.checkout {
+    display: flex;
+}
+
+.checkoutInput {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.checkoutJ {
+    margin-top: 30px;
+    border: 1px solid var(--Dusty-rose, #D4C8BE);
+    background-color: inherit;
+    overflow: hidden;
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: 330px;
+    height: 54px;
+}
+
+.PaymentP {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.cartColor {
+    display: flex;
+    gap: 25px;
+    margin-top: 27px;
+    align-items: center;
+    height: 30px;
+}
+
+.checkoutColor {
+    display: flex;
+    gap: 20px;
+    width: 24px;
+    height: 24px;
+    background-color: #b8926a;
+    border-radius: 15px;
+}
+
+.CardP {
+    font-size: 15px;
+    width: 44px;
+}
