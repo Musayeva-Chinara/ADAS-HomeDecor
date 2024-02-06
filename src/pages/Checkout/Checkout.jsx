@@ -41,14 +41,14 @@ const Checkout = () => {
         <div className={style.Checkout}>
           <div className={style.checkoutN1}>
             <div className={style.checkout}></div>
-            <from className={style.checkoutInput}>
+            <form className={style.checkoutInput}>
               <input className={style.checkoutJ} placeholder="CURTIS" />
               <input
                 className={style.checkoutJ}
                 placeholder="+ 994 (__) ___ __ __"
               />
               <input className={style.checkoutJ} placeholder="POSTAL CODE" />
-            </from>
+            </form>
           </div>
           <div className={style.Payment}>
             <p className={style.PaymentP}>DELIVERY METHOD</p>

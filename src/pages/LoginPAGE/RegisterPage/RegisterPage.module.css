@@ -1,0 +1,77 @@
+.Registerpage {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    gap: 15px;
+}
+
+.registerpage_button {
+    width: 24px;
+    height: 24px;
+    background-color: #b8926a;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerpage_button1 {
+    color: white;
+}
+
+.RegisterP {
+    color: #b8926a;
+}
+
+.RegisterPage {
+    margin-top: 108px;
+}
+
+.Register_h2 {
+    font-size: 35px;
+    color: #2D2D2B;
+}
+
+.RegisterForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.ReactPageform1 {
+    margin-top: 30px;
+    border: 1px solid var(--Dusty-rose, #D4C8BE);
+    background-color: inherit;
+    overflow: hidden;
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: 50%;
+    height: 54px;
+}
+
+.register_button {
+    margin-top: 20px;
+    width: 50%;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #EAE6DF;
+    border-radius: 10px;
+    background: var(--Primary, #B8926A);
+}
+
+.RegisterA {
+    display: flex;
+    gap: 15px;
+    margin-top: 45px;
+}
+
+.RegisterA1 {
+    color: black;
+    font-family: "Raleway";
+}
+
+.log_in {
+    color: #B8926A;
+}

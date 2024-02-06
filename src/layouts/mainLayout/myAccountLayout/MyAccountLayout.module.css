@@ -1,0 +1,61 @@
+.myAUl {
+    display: flex;
+    margin-top: 60px;
+}
+
+.myALi {
+    display: flex;
+    gap: 40px;
+}
+
+.Account1 {
+    display: flex;
+    gap: 135px;
+
+}
+
+.MyAccount {
+    background-color: #b8926a30;
+    border-radius: 10px;
+    overflow: hidden;
+    color: wheat;
+    width: 330px;
+    height: 310px;
+    padding: 25px 25px;
+    margin-top: 55px;
+}
+
+.MyAccount h2 {
+    color: black;
+    font-size: 25px;
+}
+
+.CiUser {
+    margin-top: 52px;
+}
+
+.CiUser1 {
+    display: flex;
+    gap: 15px;
+    font-size: 17px;
+}
+
+.ioHeart {
+    margin-top: 30px;
+}
+
+.ioHeart1 {
+    display: flex;
+    gap: 15px;
+    font-size: 17px;
+}
+
+.BiLog {
+    margin-top: 50px;
+}
+
+.BiLog1 {
+    display: flex;
+    gap: 15px;
+    font-size: 17px;
+}

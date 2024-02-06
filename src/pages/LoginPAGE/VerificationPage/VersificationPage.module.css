@@ -1,0 +1,79 @@
+.versification {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    gap: 15px;
+
+}
+
+.versificationH2 {
+    font-size: 35px;
+    color: #2D2D2B;
+}
+
+
+.versification_b {
+    width: 24px;
+    height: 24px;
+    background-color: #b8926a;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.versification_button {
+    color: white;
+}
+
+.Vback {
+    color: #b8926a;
+}
+
+.versificationPage {
+    margin-top: 108px;
+}
+
+.Enter {
+    display: flex;
+    flex-direction: column;
+}
+
+.enterVN {
+    margin-top: 30px;
+    border: 1px solid var(--Dusty-rose, #D4C8BE);
+    background-color: inherit;
+    overflow: hidden;
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: 50%;
+    height: 54px;
+}
+
+.VPage {
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.VPage1 {
+    color: black;
+    font-family: "Raleway";
+}
+
+.resend {
+    color: #B8926A;
+}
+
+.verify_button {
+    margin-top: 25px;
+    width: 50%;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #EAE6DF;
+    border-radius: 10px;
+    background: var(--Primary, #B8926A);
+}

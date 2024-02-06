@@ -1,0 +1,83 @@
+.loginIcons {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    gap: 15px;
+
+}
+
+.goArrIcon {
+    width: 24px;
+    height: 24px;
+    background-color: #b8926a;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_button {
+    color: white;
+}
+
+.loginP {
+    color: #b8926a;
+}
+
+.Login {
+    margin-top: 108px;
+}
+
+.Login_title {
+    font-size: 30px;
+    color: #2D2D2B;
+}
+
+.loginPageform {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginPageform1 {
+    margin-top: 30px;
+    border: 1px solid var(--Dusty-rose, #D4C8BE);
+    background-color: inherit;
+    overflow: hidden;
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: 50%;
+    height: 54px;
+}
+
+.resetP {
+    color: #B8926A;
+    margin-top: 10px;
+}
+
+.page_button {
+    margin-top: 20px;
+    width: 50%;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #EAE6DF;
+    border-radius: 10px;
+    background: var(--Primary, #B8926A);
+}
+
+.LoGIn {
+    margin-top: 70px;
+}
+
+.LPage {
+    color: black;
+    font-family: "Raleway";
+    display: flex;
+    gap: 20px;
+}
+
+.register3 {
+    color: #B8926A;
+}

@@ -13,6 +13,12 @@ import Checkout from "./pages/Checkout/Checkout";
 import MyAccountLayout from "./layouts/mainLayout/myAccountLayout/MyAccountLayout";
 import PersonaLInformationPage from "./pages/MyAccountPage/PersonalIformationPage/PersonaLInformationPage";
 import WishlistPage from "./pages/MyAccountPage/WishlistPage/WishlistPage";
+import LoginLayout from "./layouts/LoginLayout/LoginLayout";
+import LoginPage from "./pages/LoginPAGE/LoginPage/LoginPage";
+import ResetPasswordPage from "./pages/LoginPAGE/ResetPasswordPage/ResetPasswordPage";
+import RegisterPage from "./pages/LoginPAGE/RegisterPage/RegisterPage";
+import VersificationPage from "./pages/LoginPAGE/VerificationPage/VersificationPage";
+import NewPasswordPage from "./pages/LoginPAGE/NewPasswordPage/NewPasswordPage";
 
 function App() {
   return (
@@ -33,6 +39,17 @@ function App() {
             <Route index element={<PersonaLInformationPage />} />
             <Route path="wishlist" element={<WishlistPage />} />
           </Route>
+        </Route>
+        {/* <Route path="auth" element={<LoginLayout />}>
+          <Route path="login" element={<LoginPage />} />
+          <Route path="ResetPasswordPage" element={<ResetPasswordPage />} />
+        </Route> */}
+        <Route element={<LoginLayout />}>
+          <Route path="/auth" element={<LoginPage />} />
+          <Route path="/ResetPasswordPage" element={<ResetPasswordPage />} />
+          <Route path="/RegisterPage" element={<RegisterPage />} />
+          <Route path="/VersificationPage" element={<VersificationPage />} />
+          <Route path="/NewPasswordPage" element={<NewPasswordPage />} />
         </Route>
       </Routes>
     </>

@@ -1,0 +1,41 @@
+.whislist {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.whislist img {
+    width: 214px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.whislistImg {
+    display: flex;
+    gap: 20px;
+}
+
+.whislistImg1 {
+    color: #2D2D2B;
+    font-family: "Raleway";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.whislistImg1 p {
+    color: #B8926A;
+    font-family: "Raleway";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    margin-top: 22px;
+}
+
+.whislistIcon {
+    display: flex;
+
+}
