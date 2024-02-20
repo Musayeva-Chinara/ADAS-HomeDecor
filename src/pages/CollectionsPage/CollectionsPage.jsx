@@ -1,8 +1,13 @@
 import React from "react";
 import style from "./CollectionsPage.module.css";
 import CollectionsGrid from "../../assets/companents/CollectionsGrid/CollectionsGrid";
+import { useSelector } from "react-redux";
 
 const CollectionsPage = () => {
+  const { products, categories, collections } = useSelector(
+    (state) => state.product
+  );
+
   return (
     <div className="container">
       <div className={style.collecPage}>
@@ -20,6 +25,17 @@ const CollectionsPage = () => {
         </p>
       </div>
       <div className={style.collecPageGrid}>
+        {collections.map((col) => {
+          return (
+            <CollectionsGrid
+              styles="myWidth"
+              height="myHeight"
+              collection
+              data={col}
+            />
+          );
+        })}
+        {/* <CollectionsGrid />
         <CollectionsGrid />
         <CollectionsGrid />
         <CollectionsGrid />
@@ -27,8 +43,7 @@ const CollectionsPage = () => {
         <CollectionsGrid />
         <CollectionsGrid />
         <CollectionsGrid />
-        <CollectionsGrid />
-        <CollectionsGrid />
+        <CollectionsGrid /> */}
       </div>
     </div>
   );

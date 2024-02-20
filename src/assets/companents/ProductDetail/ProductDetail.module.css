@@ -73,21 +73,56 @@
 
 }
 
+.ColorButton {
+    margin-top: 23px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.greenColor {
+    border: 1px solid #539991;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GreenColor {
+    border-radius: 50%;
+    background-color: #539991;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .pdetailButton {
     display: flex;
     gap: 10px;
     align-items: center;
     color: #B8926A;
-    /* background-color: red; */
+    margin-top: 35px;
 }
+
+
 
 .pdetailButton button {
     width: 61px;
     height: 40px;
     border-radius: 10px;
-    opacity: 0.1;
-    background: var(--Primary, #B8926A);
+    color: #B8926A;
+
+    background: var(--Primary, #c08f5c30);
+
+    font-size: 20px;
 }
+
 
 .pdetailButton p {
     display: flex;
@@ -96,6 +131,7 @@
     height: 40px;
     border-radius: 10px;
     border: 1px solid var(--Primary, #B8926A);
+
     align-items: center;
 }
 

@@ -48,6 +48,7 @@
 .Shopping img {
     width: 149px;
     height: 105px;
+    border-radius: 10px;
 }
 
 .ShopP {
@@ -68,6 +69,8 @@
     height: 40px;
     border-radius: 10px;
     background: var(--Primary, #B8926A30);
+    color: #B8926A;
+    font-size: 20px;
 }
 
 .P140 {
@@ -108,7 +111,13 @@
 
 .sum_button {
     height: 54px;
-    width: 270px;
-    background-color: #b8926a86;
+    width: 250px;
+    background-color: #B8926A;
     border-radius: 10px;
+
+}
+
+.backTo {
+    margin-top: 40px;
+    color: #B8926A;
 }

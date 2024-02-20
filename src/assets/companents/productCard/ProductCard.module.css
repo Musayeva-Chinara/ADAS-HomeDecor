@@ -5,6 +5,7 @@
 
 .product1 {
     position: relative;
+    height: 267px;
     width: 100%;
 }
 
@@ -21,20 +22,18 @@
     border-radius: 5px;
     background: #FFF;
     position: absolute;
+    color: #B8926A;
     right: 15px;
     top: 15px;
 }
 
 .product_h2p h2 {
-    /* width: 400px; */
     color: #2D2D2B;
-    /* Subtitle */
     font-family: "Raleway";
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
-    /* 140% */
 }
 
 .product_h2p p {
@@ -44,5 +43,4 @@
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
-    /* 140% */
 }

@@ -16,6 +16,14 @@
 
 .CheckoutE {
     display: flex;
+    gap: 137px;
+    margin-top: 60px;
+}
+
+
+
+.checkoutInfo {
+    display: flex;
     gap: 20px;
 }
 
@@ -27,6 +35,10 @@
     display: flex;
     flex-direction: column;
 
+}
+
+.CardInput {
+    max-width: 330px;
 }
 
 .checkoutJ {
@@ -65,4 +77,16 @@
 .CardP {
     font-size: 15px;
     width: 44px;
+}
+
+.FinisOrder {
+    margin-top: 50px;
+}
+
+.FinisOrder button {
+    background-color: #B8926A;
+    width: 330px;
+    height: 54px;
+    border-radius: 10px;
+    color: #EAE6DF;
 }

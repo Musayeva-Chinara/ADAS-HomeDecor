@@ -1,8 +1,10 @@
 import React from "react";
 import style from "./About.module.css";
 import aboutImg from "../../img/aboutImg.png";
+import { Link } from "react-router-dom";
 
-const About = () => {
+const About = ({ is_home }) => {
+  console.log(Boolean(is_home));
   return (
     <>
       <div className="container">
@@ -28,7 +30,11 @@ const About = () => {
               voluptatibus maiores alias consequatur aut perferendis doloribus
               asperiores repellat.
             </p>
-            <button className={style.about_button}>LEARN MORE</button>
+            {Boolean(is_home) && (
+              <Link to="/about">
+                <button className={style.about_button}>LEARN MORE</button>
+              </Link>
+            )}
           </div>
         </div>
       </div>

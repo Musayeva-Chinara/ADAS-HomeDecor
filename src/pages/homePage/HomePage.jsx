@@ -12,8 +12,14 @@ import CollectionsGrid from "../../assets/companents/CollectionsGrid/Collections
 import { Link } from "react-router-dom";
 import Footer from "../../assets/companents/footer/Footer";
 import Contact from "../../assets/companents/Contact/Contact";
+import { useSelector } from "react-redux";
+import { SwiperSlide } from "swiper/react";
 
 const HomePage = () => {
+  const { products, categories, collections } = useSelector(
+    (state) => state.product
+  );
+
   return (
     <>
       <main>
@@ -25,10 +31,10 @@ const HomePage = () => {
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium voluptatum
               </p>
-              <Button1>
+              <Link to="/products" className={style.slbasket}>
                 <SlBasket />
                 SHOP NOW
-              </Button1>
+              </Link>
             </div>
             <div className="main_header_right">
               <div className={style.main_header_img}>
@@ -37,9 +43,23 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <Slider gap={20} sliderItem={<CollectionsGrid styles="width" />} />
+          {/* <Slider gap={20} sliderItem={<CollectionsGrid styles="width" />} /> */}
+          <Slider gap={20}>
+            {categories.map((cat) => {
+              return (
+                <SwiperSlide key={cat.id}>
+                  <CollectionsGrid
+                    styles="width"
+                    height="height"
+                    category
+                    data={cat}
+                  />
+                </SwiperSlide>
+              );
+            })}
+          </Slider>
         </section>
-        <About />
+        <About is_home="true" />
         <div className={style.discount}>
           <div className={style.discount_blur}>
             <div className={style.discount1}>
@@ -49,10 +69,12 @@ const HomePage = () => {
                 libero tempore, cum soluta nobis est eligendi optio cumque nihil
                 impedit quo
               </p>
-              <button className={style.discount_basket}>
-                <CiShoppingBasket />
-                <span>SHOP NOW</span>
-              </button>
+              <Link to="/products">
+                <button className={style.discount_basket}>
+                  <CiShoppingBasket />
+                  <span>SHOP NOW</span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -64,10 +86,24 @@ const HomePage = () => {
               <h2>COLLECTIONS</h2>
               <Link to="">See All</Link>
             </div>
-            <Slider
+            {/* <Slider
               gap={200}
               sliderItem={<CollectionsGrid styles="myWidth" />}
-            />
+            /> */}
+            <Slider gap={200} count={3}>
+              {collections.map((collec) => {
+                return (
+                  <SwiperSlide key={collec.id}>
+                    <CollectionsGrid
+                      styles="myWidth"
+                      height="myHeight"
+                      collection
+                      data={collec}
+                    />
+                  </SwiperSlide>
+                );
+              })}
+            </Slider>
           </div>
         </section>
         <Contact />

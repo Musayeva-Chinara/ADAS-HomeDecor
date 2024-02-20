@@ -19,8 +19,16 @@ import ResetPasswordPage from "./pages/LoginPAGE/ResetPasswordPage/ResetPassword
 import RegisterPage from "./pages/LoginPAGE/RegisterPage/RegisterPage";
 import VersificationPage from "./pages/LoginPAGE/VerificationPage/VersificationPage";
 import NewPasswordPage from "./pages/LoginPAGE/NewPasswordPage/NewPasswordPage";
+import Search from "./assets/companents/search/Search";
+import useProductFetch from "./features/fetch/productFetch";
+import { useEffect } from "react";
 
 function App() {
+  const { getAllData } = useProductFetch({});
+  useEffect(() => {
+    getAllData();
+  }, []);
+
   return (
     <>
       <Routes>
@@ -29,8 +37,12 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="products">
             <Route index element={<ProductPage />} />
-            <Route path="ProductDetail" element={<ProductDetail />} />
+            <Route
+              path="ProductDetail/:productID"
+              element={<ProductDetail />}
+            />
           </Route>
+          <Route path="search" element={<Search />} />
           <Route path="collections" element={<CollectionsPage />} />
           <Route path="contactpage" element={<ContactPage />} />
           <Route path="shoppingCart" element={<Shopping />} />

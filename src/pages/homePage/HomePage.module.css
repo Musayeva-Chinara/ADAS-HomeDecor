@@ -11,20 +11,31 @@
     margin-top: 300px;
 }
 
+.slbasket {
+    border-radius: 10px;
+    border: 1px solid #B8926A;
+    background: var(--Primary, #B8926A);
+    width: 330px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: var(--Background, #EAE6DF);
+}
+
 .mainheader_h2 h2 {
-    max-width: 830px;
+    max-width: 730px;
     position: absolute;
     top: 15%;
     left: 0;
     z-index: 1;
     color: #2d2d2b;
-    /* H1 */
     font-family: "GFS Didot", serif;
     font-size: 72px;
     font-style: normal;
     font-weight: 700;
     line-height: 86px;
-    /* 119.444% */
 }
 
 .mainheader_h2 p {
@@ -32,9 +43,7 @@
     margin-bottom: 50px;
     max-width: 447px;
     color: #2d2d2b;
-
-    /* Body text */
-    font-family: Raleway;
+    font-family: "Raleway";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -55,7 +64,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 62px 0;
     border-radius: 5px 5px 0px 0px;
     background: rgba(255, 255, 255, 0.10);
@@ -74,15 +82,12 @@
 .discount1 h2 {
     text-align: center;
     color: #FFF;
-
-    /* H2 */
     font-family: "Didot";
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: 52px;
     margin-bottom: 30px;
-    /* 81.25% */
 }
 
 .discount1 p {

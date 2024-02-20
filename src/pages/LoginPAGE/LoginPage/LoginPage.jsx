@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { GoArrowLeft } from "react-icons/go";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import style from "./LoginPage.module.css";
+import useUserFetch from "../../../features/fetch/userFetch";
+import { useSelector } from "react-redux";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
+  const { getUserData } = useUserFetch({});
+  const { logined } = useSelector((state) => state.user);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  useEffect(() => {
+    logined && navigate("/myaccountlayout");
+  }, [logined]);
+
+  function handleLogin(e) {
+    e.preventDefault();
+    getUserData(email, password);
+  }
+
   return (
     <div className="container">
       <Link to="/">
@@ -22,15 +39,27 @@ const LoginPage = () => {
         <div className={style.Login_title}>
           <h2>Log In</h2>
         </div>
-        <form className={style.loginPageform}>
-          <input className={style.loginPageform1} placeholder="E-MAIL ADRESS" />
-          <input className={style.loginPageform1} placeholder="PASSWORD" />
+        <form onSubmit={(e) => handleLogin(e)} className={style.loginPageform}>
+          <input
+            onChange={(e) => setEmail(e.target.value)}
+            className={style.loginPageform1}
+            placeholder="E-MAIL ADRESS"
+            type="email"
+            required
+          />
+          <input
+            onChange={(e) => setPassword(e.target.value)}
+            className={style.loginPageform1}
+            placeholder="PASSWORD"
+            type="password"
+            required
+          />
           <div className={style.resetP}>
             <Link to="/ResetPasswordPage">Forgot password?</Link>
           </div>
-          <Link to="/MyAccountLayout">
+          <div>
             <button className={style.page_button}>LOG IN</button>
-          </Link>
+          </div>
         </form>
         <div className={style.LoGIn}>
           <div className={style.LPage}>

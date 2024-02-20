@@ -1,11 +1,25 @@
-import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import style from "./MyAccountLayout.module.css";
 import { CiUser } from "react-icons/ci";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { BiLogOut } from "react-icons/bi";
+import { useDispatch, useSelector } from "react-redux";
+import { setLogout } from "../../../features/user/userSlice";
 
 const MyAccountLayout = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const { logined } = useSelector((state) => state.user);
+
+  useEffect(() => {
+    !logined && navigate("/auth");
+  }, [logined]);
+
+  function handleLogout() {
+    dispatch(setLogout());
+  }
+
   return (
     <>
       <div className="container">
@@ -31,9 +45,9 @@ const MyAccountLayout = () => {
               </button>
             </div>
             <div className={style.BiLog}>
-              <button className={style.BiLog1}>
+              <button onClick={handleLogout} className={style.BiLog1}>
                 <BiLogOut />
-                <Link to="/auth">LOG OUT</Link>
+                LOG OUT
               </button>
             </div>
           </div>

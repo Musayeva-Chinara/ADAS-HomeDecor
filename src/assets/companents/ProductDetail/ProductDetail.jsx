@@ -6,9 +6,18 @@ import { SlBasket } from "react-icons/sl";
 import { CiShoppingBasket } from "react-icons/ci";
 import Slider from "../slider/Slider";
 import ProductCard from "../productCard/ProductCard";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { SwiperSlide } from "swiper/react";
 
 const ProductDetail = () => {
+  const { productID } = useParams();
+  const { products, categories, collections } = useSelector(
+    (state) => state.product
+  );
+
+  const product = products.filter((product) => product.id == productID)[0];
+
   return (
     <div className="container">
       <div className={style.productDetail}>
@@ -21,7 +30,7 @@ const ProductDetail = () => {
       <div className={style.ProductDetail}>
         <div className={style.proDetail}>
           <div className={style.DetailImg}>
-            <img src={detailImg} alt="" />
+            <img src={product && product.image} alt="" />
           </div>
           <div className={style.ProductDetail1}>
             <div className={style.DetailImg1}>
@@ -36,23 +45,27 @@ const ProductDetail = () => {
           </div>
         </div>
         <div className={style.ProductDetail2}>
-          <h2>GRAYSON PREMIUM GREY WASH NEST OF TABLES</h2>
-          <p className={style.graysonP}>
-            Temporibus autem quibusdam et aut officiis debitis aut rerum
-            necessitatibus saepe eveniet ut et voluptates repudiandae sint et
-            molestiae non recusandae.
-          </p>
+          <h2>{product && product.title}</h2>
+          <p className={style.graysonP}>{product && product.desc}</p>
           <p className={style.colors}>COLORS</p>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div className={style.ColorButton}>
+            <div className={style.greenColor}>
+              <button className={style.GreenColor}></button>
+            </div>
+            <div className={style.brownColor}>
+              <button className={style.GreenColor}></button>
+            </div>
+            <div>
+              <button className={style.GreenColor}></button>
+            </div>
+          </div>
           <div className={style.pdetailButton}>
             <button>+</button>
             <p>1</p>
             <button>-</button>
           </div>
           <div className={style.buttonP}>
-            <p>140$</p>
+            <p>{product && product.price}$</p>
           </div>
           <div className={style.detailButton}>
             <Link to="/Checkout" className={style.detailB}>
@@ -70,10 +83,22 @@ const ProductDetail = () => {
         <h2>SIMILAR PRODUCTS</h2>
       </div>
       <div className={style.datilCard}>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <Slider gap={20}>
+          {products
+            .filter((i) => i.categoriesId == product.categoriesId)
+            .map((product) => {
+              return (
+                <SwiperSlide key={product.id}>
+                  <ProductCard
+                    id={product.id}
+                    name={product.title}
+                    price={product.price}
+                    img={product.image}
+                  />
+                </SwiperSlide>
+              );
+            })}
+        </Slider>
       </div>
     </div>
   );

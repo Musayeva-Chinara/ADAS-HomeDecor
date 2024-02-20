@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import style from "./Products.module.css";
-import ProductCard from "../productCard/productCard";
+import { useSelector } from "react-redux";
+import ProductCard from "../productCard/ProductCard";
 
 const Products = () => {
+  const { products } = useSelector((state) => state.product);
+
   return (
     <section className="container">
       <div className={style.products}>
@@ -11,15 +14,17 @@ const Products = () => {
           <Link to="">Seel All</Link>
         </div>
         <div className={style.product__grid}>
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {products.slice(0, 8).map((product) => {
+            return (
+              <ProductCard
+                key={product.id}
+                id={product.id}
+                name={product.title}
+                img={product.image}
+                price={product.price}
+              />
+            );
+          })}
         </div>
       </div>
     </section>

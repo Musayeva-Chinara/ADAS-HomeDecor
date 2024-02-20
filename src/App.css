@@ -40,6 +40,7 @@ ol {
 
 button {
     background-color: transparent;
+    cursor: pointer;
 }
 
 @media(max-width: 1380px) {

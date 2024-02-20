@@ -85,12 +85,16 @@ const Shopping = () => {
                 <p>TOTAL PRICE</p>
                 <span>460$</span>
               </div>
-              <button className={style.sum_button}>CHECKOUT</button>
+              <Link to="/Checkout">
+                <button className={style.sum_button}>CHECKOUT</button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <Link to="/products">BACK TO SHOPPING</Link>
+      <div className={style.backTo}>
+        <Link to="/products">BACK TO SHOPPING</Link>
+      </div>
     </div>
   );
 };

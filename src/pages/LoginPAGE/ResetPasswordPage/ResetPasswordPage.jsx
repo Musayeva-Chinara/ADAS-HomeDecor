@@ -1,5 +1,5 @@
-import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import { GoArrowLeft } from "react-icons/go";
 import style from "./ResetPasswordPage.module.css";
 
@@ -13,7 +13,9 @@ const ResetPasswordPage = () => {
           </button>
         </div>
         <div className={style.Reset_P}>
-          <p>BACK</p>
+          <Link to="/auth">
+            <p>BACK</p>
+          </Link>
         </div>
       </div>
       <div className={style.ResetPassword}>
